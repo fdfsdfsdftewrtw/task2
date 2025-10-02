@@ -81,4 +81,46 @@
     transform: scale(1.2);
 }
 
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* меняем на колонку */
+    }
 
+    .sidebar { /* боковое меню */
+        width: 100%; /* меню растягивается на всю ширину */
+        display: flex; /* включаем flexbox */
+        flex-wrap: wrap; /* если элементов много они переносятся на новую строку */
+        justify-content: space-around; /* чтобы между элементами были равные промежутки */
+        padding: 10px;
+    }
+
+    .menu-box {
+        margin-top: 10px;
+        flex: 1 1 45%; /* каждое меню занимает почти половину ширины родителя */
+        text-align: center;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .header {
+        font-size: 24px;
+        padding: 15px 20px;
+        margin-top: 8px;
+        text-align: center;
+    }
+
+    .logo {
+        width: 120px;
+        margin: 10px auto;
+        display: none;
+    }
+
+    .img {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+}
