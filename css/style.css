@@ -1,0 +1,84 @@
+.header{
+    /* прозрачность */
+    opacity: 0.9;
+
+    /* фон градиентом */
+    background: linear-gradient(to right, yellow, greenyellow);
+
+    /* смещение тени вправо, смещение тени вниз, размытие тени, цвет тени */
+    text-shadow: 2px 2px 4px forestgreen;
+
+    box-shadow: 4px 4px 15px darkgreen;
+
+    /* скругление углов */
+    border-radius: 30px;
+
+    /* поворот текста */
+    transform: rotate(-5deg);
+
+    display: inline-block; /* чтобы заголовок не растягивался на всю ширину */
+    padding: 20px 40px;  /* отступ для текста */
+    color: white;
+    font-size: 30px;
+
+    margin-top: 12px  /* Внещний отступ */;
+}
+
+.logo {
+    width: 160px;
+    height: auto;
+    margin-left: -40px;
+}
+
+.container {
+    display: flex;
+    min-height: 100vh; /* На сколько процентов будет растянуто по высоте */
+}
+
+.sidebar {
+    width: 220px;
+    padding: 20px;
+    background: linear-gradient(to bottom, greenyellow, teal);
+}
+
+.menu-box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 8px darkgreen;
+    margin-top: 15px;
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.menu-box a { /* внешний вид и поведение ссылки */
+    text-decoration: none; /* чтобы ссылки не выделялись*/
+    color: black;
+    font-weight: bold;
+    display: block; /* чтобы ссылка занимала весь блок*/
+}
+
+.menu-box:hover {
+    transform: translateX(5px);  /* при наведении чуть сдвигается */
+    box-shadow: 4px 4px 12px darkgreen; /* тень становится сильнее */
+}
+
+.content {
+    flex: 1;
+    padding: 20px;
+    background: white;
+}
+
+.img{
+    width: 160px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 4px 4px 12px darkgreen;
+    border: 2px solid darkgreen;
+    transition: transform 0.3s;
+}
+
+.img:hover {
+    transform: scale(1.2);
+}
+
+
