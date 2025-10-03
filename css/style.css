@@ -1,15 +1,15 @@
 @font-face {
     font-family: 'Airport';
-    src: url('fonts/Airport.ttf') format('truetype');
+    src: url('../fonts/Airport.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'CoolFont 1';
-    src: url('fonts/7Hi3uc7D.otf') format("opentype");
+    src: url('../fonts/7Hi3uc7D.otf') format("opentype");
 }
 @font-face {
     font-family: 'CoolFont 2';
-    src: url('fonts/OKScU8ig.ttf') format("truetype");
+    src: url('../fonts/OKScU8ig.ttf') format("truetype");
 }
 
 
@@ -48,6 +48,7 @@
 }
 
 .container {
+    font-family: 'CoolFont 2', sans-serif;
     display: flex;
     min-height: 100vh; /* На сколько процентов будет растянуто по высоте */
 }
