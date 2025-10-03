@@ -1,4 +1,21 @@
+@font-face {
+    font-family: 'Airport';
+    src: url('fonts/Airport.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'CoolFont 1';
+    src: url('fonts/7Hi3uc7D.otf') format("opentype");
+}
+@font-face {
+    font-family: 'CoolFont 2';
+    src: url('fonts/OKScU8ig.ttf') format("truetype");
+}
+
+
 .header{
+    font-family: 'Airport', sans-serif;
+
     /* прозрачность */
     opacity: 0.9;
 
@@ -63,6 +80,7 @@
 }
 
 .content {
+    font-family: 'CoolFont 1', sans-serif;
     flex: 1;
     padding: 20px;
     background: white;
